@@ -13,22 +13,22 @@
 
 </head>
 <body>
-    <header>
+    <header id="inicio">
         <nav class="nav">
             <div class="logo">
                 <img src="../img/logo2.jpg" alt="">
             </div>
              <ul class="menu">
-                  <li><a class="a-menu" href="#menu">menu</a></li>
+                  <li><a class="a-menu" href="#inicio">inicio</a></li>
                   <li><a class="a-menu" href="#informacion">informacion</a></li>
                   <li><a class="a-menu" href="#container-galery">galeria</a></li>
-                  <li><a class="a-menu" href="#servicios">servicios</a></li>
+                  <li><a class="a-menu" href="#servicios">Reseñas</a></li>
                   <li><a class="a-menu a-menu-ultimo" href="#contacto">contacto</a></li>
              </ul>
         </nav>
         <div class="titulo">
             <h1>INICIA SESION ADENTRANDOTE EN TU ESFUERZO</h1>
-            <a href="login.html" class="boton">Iniciar sesion</a>
+            <a href="/login" class="boton">Iniciar sesion</a>
         </div>
 </header>
 <div class="scrol">
@@ -39,7 +39,7 @@
 
 <section id="tarjetas">
         <div class="contenedor">
-            <div class="contenedor-tarjetas">
+            <div class="contenedor-tarjetas" id="informacion">
                 <div class="tarjeta">
                     <img src="../img/icon.png" class="imagen-tarjeta">
                     <h3 class="tarjeta-titulo">Clases grupales</h3>
@@ -76,7 +76,7 @@
     </div>
 </section>
 
-<div class="container-videos">
+<div class="container-videos" id="container-galery">
     <div class="contenido-videos">
     <video src="../img/video.mp4" height="550px" class="video1" autoplay muted data-aos="slide-right" data-aos-once="true" data-aos-duration="1000"></video>
     <video src="../img/video2.mp4" class="video2" autoplay muted data-aos="slide-up" data-aos-once="true" data-aos-duration="1000"></video>
@@ -126,7 +126,7 @@
     <div class="footer-wave-box">
         <div class="footer-wave footer-animation"></div>
     </div>
-    <div class="main">
+    <div class="main" id="contacto">
         <div class="footer">
             <div class="single-footer">
                 <h4>Acerca de nosotros</h4>

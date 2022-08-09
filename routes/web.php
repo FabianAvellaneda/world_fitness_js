@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\GerenteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('paginaPrincipal');
 });
+
+Route::get('/login',[LoginController::class,'show']);
+Route::post('/login',[LoginController::class,'login']);
+
+Route::get('/gerente',[GerenteController::class,'index']);

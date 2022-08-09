@@ -23,14 +23,15 @@
                     <span>Cliente</span>
                 </div>
             </div>
-            <form class="inputs-container">
-                <input class="input" type="text" placeholder="Usuario">
-                <input class="input" type="text" placeholder="Contraseña">
+            <form class="inputs-container" action="/login" method="POST">
+            @csrf
+                <input class="input" type="text" placeholder="Usuario" name="user">
+                <input class="input" type="password" placeholder="Contraseña" name="password">
                 <p>¿olvidaste tu contraseña? <span class="span">Click aqui</span></p>
                 <button class="btn">Iniciar sesion</button>
             </form>
           </div>
-            <img class="image-container" src="{{ asset(img/pexels-leon-ardho-2468339.jpg') }} alt="">
+            <img class="image-container" src="{{ asset('img/pexels-leon-ardho-2468339.jpg') }}">
       </div>
 
 </body>
