@@ -40,7 +40,8 @@
 
         <ul class="sub-menu">
           <li><a class="link_name" href="#">Usuarios</a></li>
-          <li><a href=" {{route('usuario.create') }}">Clientes</a></li>
+          <li><a href=" {{route('usuario.create') }}">Usuarios</a></li>
+          <li><a>Clientes</a></li>
           <li><a href=" {{route('valoracion_fisica.create') }}">Valoracion fisica</a></li>
           <li><a href="#">Entrenadores</a></li>
           <li><a href="#">Administradores</a></li>
@@ -94,7 +95,7 @@
         <div class="profile_name">Santiago duarte</div>
         <div class="job">Administrador</div>
       </div>
-      <i class='bx bx-log-out' ></i>
+      <a href="{{route('login.login') }}"><i class='bx bx-log-out'></i></a>
     </div>
   </li>
 </ul>

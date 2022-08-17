@@ -26,8 +26,8 @@ Route::get('/', function () {
     return view('paginaPrincipal');
 });
 
-Route::get('/login',[LoginController::class,'show']);
-Route::post('/login',[LoginController::class,'login']);
+Route::get('/login',[LoginController::class,'show'])->name('login.show');
+Route::post('/login',[LoginController::class,'login'])->name('login.login');
 
 Route::get('usuario/registrar', [UsuarioController::class, 'create'])->name('usuario.create');
 Route::get('usuario/index', [UsuarioController::class, 'index'])->name('usuario.index');
