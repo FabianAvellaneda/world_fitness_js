@@ -16,7 +16,7 @@
     <header id="inicio">
         <nav class="nav">
             <div class="logo">
-                <img src="img/logo2.jpg" alt="">
+                <img src="{{ asset('img/logo2.jpg') }}">
             </div>
              <ul class="menu">
                   <li><a class="a-menu" href="#inicio">inicio</a></li>
@@ -41,14 +41,14 @@
         <div class="contenedor">
             <div class="contenedor-tarjetas" id="informacion">
                 <div class="tarjeta">
-                    <img src="../img/icon.png" class="imagen-tarjeta">
+                    <img src="{{ asset('img/icon.png') }}" class="imagen-tarjeta">
                     <h3 class="tarjeta-titulo">Clases grupales</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit natus aspernatur esse amet eligendi </p>
                     <a href="#">Ver mas</a>
                 </div>
 
                 <div class="tarjeta segunda-tarjeta">
-                <img src="../img/icon2.png" class="imagen-tarjeta">
+                <img src="{{ asset('img/icon2.png') }}" class="imagen-tarjeta">
                     <h3 class="tarjeta-titulo">Entrenamientos de fuerza</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit natus aspernatur esse amet eligendi </p>
                     <a href="#">Ver mas</a>
@@ -173,6 +173,6 @@
 <script>
     AOS.init();
   </script>
-<script src="../js/menu.js"></script>
+<script src=" {{ asset('js/menu.js') }} "></script>
 </body>
 </html>

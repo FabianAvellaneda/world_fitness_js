@@ -5,6 +5,9 @@
 @section('contenido')
     <h3>Nuevo Mantenimiento</h3>
 
+    <a href="{{ route('mantenimiento.index') }}" class="btn btn-link">Lista Mantenimientos</a>
+    <a href="{{ route('gerente.indexAdmin') }}" class="btn btn-link">Index</a>
+
     <form action="{{ route('mantenimiento.store') }}" method="POST">
         @csrf
         <div class="row">

@@ -6,8 +6,9 @@
     <h3>Listado de Usuarios</h3>
     
     <div class="col-sm-12">
-        <a href="{{ route('usuario.create') }}" class="btn btn-link">Crear Tarea</a>
-        <a href="{{ route('usuario.index') }}" class="btn btn-link">Listar Tareas</a>
+        <a href="{{ route('usuario.create') }}" class="btn btn-link">Crear Usuario</a>
+        <a href="{{ route('usuario.index') }}" class="btn btn-link">Lista Usuarios</a>
+        <a href="{{ route('gerente.indexAdmin') }}" class="btn btn-link">Index</a>
     </div>
     <table class="table table-stripped table-hover">
         <thead>

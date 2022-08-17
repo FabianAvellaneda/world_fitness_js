@@ -5,8 +5,8 @@
 @section('contenido')
     <h3>Nuevo Usuario</h3>
     <div class="col-sm-12">
-                <a href="{{ route('usuario.create') }}" class="btn btn-link">Crear Tarea</a>
-                <a href="{{ route('usuario.index') }}" class="btn btn-link">Listar Tareas</a>
+                <a href="{{ route('usuario.index') }}" class="btn btn-link">Listar Usuario</a>              
+                <a href="{{ route('gerente.indexAdmin') }}" class="btn btn-link">Index</a>
             </div>
     <form action="{{ route('usuario.store') }}" method="POST">
         @csrf

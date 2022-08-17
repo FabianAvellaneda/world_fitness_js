@@ -6,8 +6,9 @@
     <h3>Listado de Usuarios</h3>
     
     <div class="col-sm-12">
-        <a href="{{ route('valoracion_fisica.create') }}" class="btn btn-link">Crear Tarea</a>
-        <a href="{{ route('valoracion_fisica.index') }}" class="btn btn-link">Listar Tareas</a>
+        <a href="{{ route('valoracion_fisica.create') }}" class="btn btn-link">Nueva valoracion</a>
+        <a href="{{ route('valoracion_fisica.index') }}" class="btn btn-link">Lista Valoraciones</a>
+        <a href="{{ route('gerente.indexAdmin') }}" class="btn btn-link">Index</a>
     </div>
     <table class="table table-stripped table-hover">
         <thead>
@@ -69,7 +70,7 @@
                         @method('delete')
                         <button type="submit" class="btn btn-danger btn-sm">Borrar</button>
                     </form>
-                    <a href="{{ route('valoracion_fisica.edit', $valoracion_fisica) }}">Editar</a>
+                    <a href="{{ route('valoracion_fisica.edit', $valoracion_fisica) }}" >Editar</a>
                 </td>
             </tr>
             @endforeach

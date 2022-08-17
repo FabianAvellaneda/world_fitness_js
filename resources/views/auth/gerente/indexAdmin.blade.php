@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="indexAdmin.css">
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href=" {{ asset('css/indexAdmin.css ') }}">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -40,7 +40,8 @@
 
         <ul class="sub-menu">
           <li><a class="link_name" href="#">Usuarios</a></li>
-          <li><a href="#">Clientes</a></li>
+          <li><a href=" {{route('usuario.create') }}">Clientes</a></li>
+          <li><a href=" {{route('valoracion_fisica.create') }}">Valoracion fisica</a></li>
           <li><a href="#">Entrenadores</a></li>
           <li><a href="#">Administradores</a></li>
         </ul>
@@ -69,6 +70,7 @@
         <ul class="sub-menu">
           <li><a class="link_name" href="#">Maquinaria</a></li>
           <li><a href="#">Maquinarias</a></li>
+          <li><a href="{{route('mantenimiento.crear') }}">Mantenimiento</a></li>
           <li><a href="#">Reportes</a></li>
         </ul>
       </li>

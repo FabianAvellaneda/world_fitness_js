@@ -22,7 +22,7 @@
                     <img src="{{ asset('img/aerobicos.png') }}">
                     <a href="/cliente/index" class="boton">Cliente</a>
                 </div>
-                <div class="social-login-element">
+                <div class="social-login-element utlimo">
                     <img src="{{ asset('img/aerobicos.png') }}">
                     <a href="/gerente/index" class="boton">Gerente</a>
                 </div>

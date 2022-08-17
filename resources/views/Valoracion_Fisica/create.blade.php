@@ -3,7 +3,7 @@
 @section('title', "Registrar")
 
 @section('contenido')
-    <h3>Nuevo Mantenimiento</h3>
+    <h3>Nueva valoracion fisica</h3>
 
     <form action="{{ route('valoracion_fisica.store') }}" method="POST">
         @csrf
